@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="editor-container">
+        <h1>Text Editor Website</h1>
+        <br><br>
+        <div id="toolbar">
+            <button class="tool-button" onclick="formatText('bold')">Bold</button>
+            <button class="tool-button" onclick="formatText('italic')">Italic</button>
+            <button class="tool-button" onclick="formatText('underline')">Underline</button>
+            <button class="tool-button" onclick="formatText('strikeThrough')">Strikethrough</button>
+            <button class="tool-button" onclick="formatText('insertUnorderedList')">Bullet List</button>
+            <button class="tool-button" onclick="formatText('insertOrderedList')">Numbered List</button>
+            <button class="tool-button" onclick="formatText('justifyLeft')">Align Left</button>
+            <button class="tool-button" onclick="formatText('justifyCenter')">Align Center</button>
+            <button class="tool-button" onclick="formatText('justifyRight')">Align Right</button>
+            <input type="color" id="colorPicker" class="tool-button" value="#333333" onchange="formatText('foreColor', this.value)">
+        </div>
+
+        <div id="text-editor" contenteditable="true">
+            Start typing here...
+        </div>
+
+        <button id="download-button" onclick="downloadFile()">Download as .txt</button>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
