@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sticky Sidebar - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+        <!-- Main Content (Larger Section) -->
+        <main class="lg:col-span-3 bg-white p-6 shadow rounded-lg">
+
+            <!-- Hero Section -->
+            <section class="bg-blue-500 text-white p-6 rounded-lg mb-6 flex flex-col md:flex-row items-center gap-4">
+                <img src="https://www.codewithfaraz.com/tools/placeholder?size=300x300" alt="Hero Image" class="w-40 h-40 rounded-lg">
+                <div>
+                    <h1 class="text-3xl font-bold">Welcome to Our Blog</h1>
+                    <p class="mt-2 text-lg">Stay updated with the latest articles and trends.</p>
+                </div>
+            </section>
+
+            <!-- Featured Articles -->
+            <section>
+                <h2 class="text-2xl font-bold mb-4">Featured Articles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-200 p-4 rounded-lg shadow">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=300x300" alt="Article 1" class="rounded-lg mb-2">
+                        <h3 class="text-lg font-semibold">Article 1</h3>
+                        <p class="text-gray-700">Short description of the article.</p>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-lg shadow">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=300x300" alt="Article 2" class="rounded-lg mb-2">
+                        <h3 class="text-lg font-semibold">Article 2</h3>
+                        <p class="text-gray-700">Short description of the article.</p>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-lg shadow">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=300x300" alt="Article 3" class="rounded-lg mb-2">
+                        <h3 class="text-lg font-semibold">Article 3</h3>
+                        <p class="text-gray-700">Short description of the article.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section class="mt-6">
+                <h2 class="text-2xl font-bold mb-4">Latest Posts</h2>
+                <div class="space-y-4">
+                    <div class="p-4 bg-gray-100 rounded-lg shadow flex items-center gap-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=100x100" alt="Post 1" class="rounded-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold">Post Title 1</h3>
+                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg shadow flex items-center gap-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=100x100" alt="Post 2" class="rounded-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold">Post Title 2</h3>
+                            <p class="text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg shadow flex items-center gap-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=100x100" alt="Post 3" class="rounded-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold">Post Title 3</h3>
+                            <p class="text-gray-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg shadow flex items-center gap-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=100x100" alt="Post 1" class="rounded-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold">Post Title 4</h3>
+                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg shadow flex items-center gap-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=100x100" alt="Post 2" class="rounded-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold">Post Title 5</h3>
+                            <p class="text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg shadow flex items-center gap-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=100x100" alt="Post 3" class="rounded-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold">Post Title 6</h3>
+                            <p class="text-gray-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Sidebar (Smaller Section) -->
+        <aside class="lg:col-span-1 p-6">
+
+            <!-- Profile Card -->
+            <div class="bg-blue-100 p-4 rounded-lg shadow mb-6">
+                <h2 class="text-xl font-bold">Author Profile</h2>
+                <p class="text-gray-700">John Doe - Tech Enthusiast</p>
+            </div>
+
+            <!-- Categories -->
+            <div class="mb-6 p-4 bg-white shadow rounded-lg">
+                <h2 class="text-xl font-bold mb-2">Categories</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-500">Technology</a></li>
+                    <li><a href="#" class="text-blue-500">Business</a></li>
+                    <li><a href="#" class="text-blue-500">Health</a></li>
+                    <li><a href="#" class="text-blue-500">Lifestyle</a></li>
+                </ul>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="mb-6 p-4 bg-white shadow rounded-lg">
+                <h2 class="text-xl font-bold mb-2">Recent Posts</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-700">How to Start Coding</a></li>
+                    <li><a href="#" class="text-gray-700">5 Tips for Remote Work</a></li>
+                    <li><a href="#" class="text-gray-700">The Future of AI</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/resize-sensor@0.0.6/ResizeSensor.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/theia-sticky-sidebar@1.7.0/dist/theia-sticky-sidebar.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
