@@ -3,58 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100+ Frontend Projects | Irfaan</title>
+    
+    <title>Irfaan Mansoori | The Zenith Vault: 100+ Legacy Frontend Projects</title>
+    <meta name="description" content="विकास की नींव: इरफ़ान मंसूरी के शुरुआती 105 कोडिंग रिकॉर्ड्स का सुरक्षित संग्रह। Explore 100+ legacy frontend projects.">
+    <meta name="keywords" content="Irfaan Mansoori, The Zenith Vault, Frontend Projects, Coding Archive, HTML CSS JS">
+    <meta name="author" content="Irfaan Mansoori">
+
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency-systems-filled/48/bfa57d/scroll.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
         
-        /* Top Glowing Badge */
-        .journey-badge { animation: glow 2s ease-in-out infinite alternate; }
-        @keyframes glow { from { box-shadow: 0 0 5px #3b82f6; } to { box-shadow: 0 0 15px #3b82f6; } }
+        .journey-badge { 
+            animation: glow 2s ease-in-out infinite alternate;
+            background: #2c241a !important; 
+            border: 2px solid #bfa57d !important; 
+            color: #f2e6d9 !important;
+        }
+        @keyframes glow { 
+            from { box-shadow: 0 0 5px #8b7355; } 
+            to { box-shadow: 0 0 20px #bfa57d; } 
+        }
         
-        /* Glass Effect */
         .glass { 
-            background: rgba(15, 23, 42, 0.8); 
+            background: rgba(26, 22, 18, 0.95); 
             backdrop-filter: blur(12px); 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border: 1px solid rgba(139, 115, 85, 0.4); 
         }
         
-        /* होHover Effect */
-        .project-card, .coming-soon-card { transition: all 0.3s ease; }
-        .project-card:hover, .coming-soon-card:hover { 
-            border-color: #38bdf8; 
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { 
+            border-color: #bfa57d; 
             transform: translateY(-5px); 
-            background: rgba(30, 41, 59, 0.9);
+            background: rgba(44, 36, 26, 0.9);
+        }
+
+        .sealed-card {
+            background: linear-gradient(145deg, rgba(80, 0, 0, 0.8), rgba(26, 22, 18, 1)) !important;
+            border: 2px solid #ef4444 !important;
+            box-shadow: inset 0 0 25px rgba(239, 68, 68, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .sealed-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 40px rgba(239, 68, 68, 0.5);
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0) scale(1.02); }
+            25% { transform: translateX(-4px) scale(1.02); }
+            75% { transform: translateX(4px) scale(1.02); }
         }
         
-        /* Number of Badges */
         .number-badge {
-            background: rgba(56, 189, 248, 0.15);
-            color: #38bdf8;
-            text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            background: rgba(139, 115, 85, 0.2);
+            color: #bfa57d;
+            border: 1px solid rgba(139, 115, 85, 0.4);
+        }
+
+        .archive-font {
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .portfolio-link:hover .link-icon {
+            transform: translate(2px, -2px);
+        }
+        .portfolio-link:hover .hover-hint {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body class="bg-[#020617] text-slate-200 min-h-screen flex flex-col">
+<body class="bg-[#1a1612] text-[#d9d4cc] min-h-screen flex flex-col">
     
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/10 rounded-full blur-[120px]"></div>
+        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#8b7355]/15 rounded-full blur-[120px]"></div>
     </div>
 
     <div class="container mx-auto px-6 py-16 flex-grow">
         <header class="max-w-4xl mx-auto text-center mb-16">
-            <span class="journey-badge px-5 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-[10px] font-bold tracking-widest uppercase mb-6 inline-block border border-blue-500/30">
-                🚀 My Learning Journey
+            <span class="journey-badge px-6 py-2 rounded-full text-[11px] font-bold tracking-[0.3em] uppercase mb-8 inline-block shadow-lg">
+                🏛️ THE ZENITH VAULT
             </span>
             
             <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-                100+ <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Frontend Projects</span>
+                100+ <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-[#bfa57d] to-yellow-200">Frontend Projects</span>
             </h1>
             
-            <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto">
-                मेरे कोडिंग सफर के शुरुआती <span class="text-white font-semibold">105</span> बेहतरीन HTML, CSS और JS प्रोजेक्ट्स का संग्रह।
+            <p class="text-[#f2e6d9] text-base md:text-lg max-w-2xl mx-auto italic border-t border-b border-[#3d342b]/50 py-4">
+                विकास की नींव: मेरे शुरुआती <span class="text-white font-semibold">105</span> कोडिंग रिकॉर्ड्स का सुरक्षित संग्रह।
             </p>
         </header>
 
@@ -62,46 +107,70 @@
         </div>
     </div>
 
-    <footer class="w-full py-10 border-t border-slate-800 bg-[#020617] text-center">
-        <p class="text-slate-500 text-sm">
-            © 2026 <span class="text-white font-semibold">Irfaan Mansoori</span>. All Rights Reserved.
+    <footer class="w-full py-10 border-t border-[#3d342b] bg-[#14110e] text-center relative">
+        <div class="mb-2">
+            <p class="text-[#73695e] text-sm flex justify-center items-center gap-1.5">
+                © 2026 
+                <a href="https://irfaan-mansoori.vercel.app" target="_blank" 
+                   class="portfolio-link text-white font-bold tracking-wide hover:text-[#bfa57d] transition-all relative group underline decoration-dotted decoration-[#bfa57d] underline-offset-4">
+                    Irfaan Mansoori
+                    <svg class="link-icon inline-block w-3 h-3 ml-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                    <span class="hover-hint absolute -top-8 left-1/2 -translate-x-1/2 bg-[#bfa57d] text-[#1a1612] text-[9px] px-2 py-1 rounded font-bold opacity-0 transition-all duration-300 pointer-events-none whitespace-nowrap translate-y-1">
+                        CLICK TO VISIT WEBSITE
+                    </span>
+                </a>. All Rights Reserved.
+            </p>
+        </div>
+        <p class="text-[#f59e0b] text-[10px] mt-3 uppercase tracking-[0.5em] font-extrabold">
+            AUTHENTIC MANUSCRIPT EDITION
         </p>
-        <p class="text-slate-600 text-[9px] mt-2 uppercase tracking-[0.3em]">Built for Portfolio Showcase</p>
     </footer>
 
     <script>
         const grid = document.getElementById('project-grid');
         const totalProjects = 105; 
 
-        // Generate Card For Project
         for (let i = 1; i <= totalProjects; i++) {
             let num = i < 10 ? `0${i}` : i;
             let folderName = `Project ${num}`;
             
             grid.innerHTML += `
-                <a href="${folderName}/index.html" class="project-card glass p-6 rounded-2xl group flex flex-col justify-between h-44">
+                <a href="${folderName}/index.html" class="project-card glass p-6 rounded-2xl group flex flex-col justify-between h-44 border-l-4 border-l-[#8b7355]">
                     <div class="flex justify-between items-start">
                         <div class="number-badge px-3 py-1 rounded-lg text-sm font-bold">
                             #${num}
                         </div>
-                        <div class="text-slate-500 group-hover:text-blue-400 transition-colors">
+                        <div class="text-[#59524a] group-hover:text-[#bfa57d] transition-colors">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">${folderName}</h3>
-                        <p class="text-blue-400/70 text-[11px] font-medium tracking-wide">Click here for Live Demo →</p>
+                        <h3 class="text-md font-bold text-white mb-1 group-hover:text-[#bfa57d] transition-colors archive-font">Project_Archive_${num}</h3>
+                        <div class="inline-block">
+                            <p class="text-[#bfa57d] text-[10px] font-bold tracking-widest uppercase italic mb-0.5">Retrieve Data →</p>
+                            <div class="border-t border-dotted border-[#bfa57d] w-full opacity-50"></div>
+                        </div>
                     </div>
                 </a>
             `;
         }
 
-        // Comming Soon....
         grid.innerHTML += `
-            <div class="coming-soon-card glass p-6 rounded-2xl flex flex-col justify-center items-center h-44 border-dashed border-2 border-slate-700 bg-slate-900/10 text-center group cursor-default">
-                <div class="text-slate-600 group-hover:text-blue-400 mb-2 font-bold text-xl animate-pulse">+</div>
-                <h3 class="text-lg font-bold text-slate-500 group-hover:text-slate-300 italic font-mono">Coming Soon</h3>
-                <p class="text-slate-600 group-hover:text-slate-400 text-[10px] mt-1">More projects arriving...</p>
+            <div class="sealed-card p-6 rounded-2xl flex flex-col justify-center items-center h-44 text-center cursor-not-allowed overflow-hidden relative">
+                <div class="absolute top-4 right-4 flex items-center gap-1">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                    <span class="text-emerald-400 text-[8px] font-bold uppercase tracking-widest">Verified</span>
+                </div>
+                
+                <div class="text-[#ef4444] mb-2 font-bold text-3xl">🔒</div>
+                <h3 class="text-lg font-bold text-white archive-font uppercase tracking-tighter">Archive Sealed</h3>
+                <p class="text-white text-[10px] mt-1 font-black uppercase tracking-[0.2em] bg-red-600/40 px-2 py-0.5 rounded">
+                    105 Records Logged
+                </p>
+                
+                <div class="mt-4 w-16 h-0.5 bg-[#ff0000] shadow-[0_0_10px_#ff0000]"></div>
             </div>
         `;
     </script>
